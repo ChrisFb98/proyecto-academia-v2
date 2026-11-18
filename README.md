@@ -3,6 +3,8 @@
 Rediseño del sitio estático de **Academia Conquer** con una estética *space / IA*:
 fondo profundo, verde suave (`#9defc5`), cian (`#7ce7f4`) y azul mate (`#718cff`).
 
+**Sitio publicado:** https://chrisfb98.github.io/proyecto-academia-v2/
+
 Construido con **Vite + SASS**, HTML semántico, iconografía SVG y diseño
 responsive *mobile-first*. Mantiene las 13 páginas y los contenidos del sitio original.
 
