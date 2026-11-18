@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: $font-mono;
+  font-size: $fs-xs;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $color-green;
+}
+
+.eyebrow__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $color-green;
+  box-shadow: 0 0 12px rgba(157, 239, 197, 0.9);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.32rem 0.7rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-pill;
+  background: rgba(255, 255, 255, 0.03);
+  color: $color-text-soft;
+  font-size: $fs-xs;
+  line-height: 1.4;
+
+  .icon {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}
+
+.chip--green {
+  border-color: rgba(157, 239, 197, 0.28);
+  background: rgba(95, 227, 166, 0.1);
+  color: $color-green;
+}
+
+.chip--blue {
+  border-color: rgba(113, 140, 255, 0.32);
+  background: rgba(113, 140, 255, 0.12);
+  color: #b9c5ff;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: $radius-pill;
+  background: rgba(4, 7, 14, 0.78);
+  border: 1px solid $color-border-strong;
+  color: $color-text;
+  font-family: $font-mono;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
+  .icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    color: $color-green;
+  }
+}
+
+.badge--green {
+  background: rgba(95, 227, 166, 0.14);
+  border-color: rgba(157, 239, 197, 0.35);
+  color: $color-green;
+}
+
+.tag {
+  font-family: $font-mono;
+  font-size: $fs-xs;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-blue;
+}

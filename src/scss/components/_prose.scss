@@ -1,0 +1,93 @@
+@use "../abstracts" as *;
+
+.prose {
+  max-width: 70ch;
+  color: $color-text-soft;
+
+  > * + * {
+    margin-top: 1.1rem;
+  }
+
+  h2 {
+    margin-top: 2.4rem;
+    font-size: $fs-xl;
+  }
+
+  h3 {
+    margin-top: 1.8rem;
+    font-size: $fs-lg;
+  }
+
+  p,
+  li {
+    line-height: 1.78;
+    color: $color-text-soft;
+  }
+
+  ul,
+  ol {
+    display: grid;
+    gap: 0.55rem;
+    padding-left: 1.3rem;
+  }
+
+  li::marker {
+    color: $color-green;
+  }
+
+  a {
+    color: $color-green;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color $t-fast;
+
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+
+  strong {
+    color: #ffffff;
+  }
+
+  blockquote {
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    border-left: 3px solid $color-green;
+    color: $color-text;
+    font-size: $fs-md;
+    font-style: italic;
+  }
+
+  code {
+    padding: 0.15rem 0.4rem;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    color: $color-green;
+    font-size: 0.9em;
+  }
+
+  figure {
+    margin-block: 1.8rem;
+  }
+
+  figcaption {
+    margin-top: 0.7rem;
+    color: $color-muted;
+    font-size: $fs-xs;
+  }
+}
+
+.callout {
+  margin-top: 1.8rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(113, 140, 255, 0.3);
+  border-radius: $radius-md;
+  background: linear-gradient(120deg, rgba(113, 140, 255, 0.12), rgba(95, 227, 166, 0.06));
+  color: $color-text-soft;
+  font-size: 0.94rem;
+
+  strong {
+    color: #ffffff;
+  }
+}

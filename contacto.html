@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta con Academia Conquer: escríbenos, llámanos o visítanos. Resolvemos tus dudas sobre cursos, admisiones y becas.">
+  <meta name="theme-color" content="#04070e">
+  <title>Contacto — Academia Conquer</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="contacto-title">
+      <div class="container page-hero__inner">
+        <nav aria-label="Migas de pan" data-reveal>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li aria-current="page">Contacto</li>
+          </ol>
+        </nav>
+        <p class="eyebrow" data-reveal style="--delay: 60ms"><span class="eyebrow__dot"></span> Estamos para ayudarte</p>
+        <h1 id="contacto-title" data-reveal style="--delay: 100ms">Hablemos de tu futuro</h1>
+        <p class="page-hero__lede" data-reveal style="--delay: 140ms">
+          ¿Tienes dudas sobre qué curso elegir, las becas o el proceso de admisión? Escríbenos y te responderemos en menos de 24 horas laborables.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--top-flush">
+      <div class="container">
+        <div class="contact-layout">
+          <div data-reveal>
+            <div class="contact-info">
+              <article class="info-card">
+                <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:contacto@academiaconquer.example">contacto@academiaconquer.example</a>
+                </div>
+              </article>
+              <article class="info-card">
+                <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <div>
+                  <h3>Teléfono</h3>
+                  <a href="tel:+34600000000">+34 600 000 000</a>
+                </div>
+              </article>
+              <article class="info-card">
+                <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <div>
+                  <h3>Dirección</h3>
+                  <p>Calle Ejemplo 42, 28013 Madrid, España</p>
+                </div>
+              </article>
+            </div>
+
+            <p class="contact-support">
+              <strong>Horario de atención:</strong> lunes a viernes, de 9:00 a 18:00 (CET). Para consultas rápidas, también puedes escribirnos por <a href="https://www.conquerblocks.com" target="_blank" rel="noopener noreferrer">ConquerBlocks</a>.
+            </p>
+          </div>
+
+          <div class="contact-form-card" data-reveal style="--delay: 100ms">
+            <h2>Envíanos un mensaje</h2>
+            <p>Completa el formulario y cuéntanos qué necesitas. Te responderemos por correo electrónico.</p>
+
+            <form class="form" action="#" method="post" data-demo-form data-success="¡Mensaje enviado! Gracias por escribirnos, te responderemos en menos de 24 h.">
+              <div class="form__grid">
+                <div class="field">
+                  <label for="nombre">Nombre *</label>
+                  <input class="input" type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="field">
+                  <label for="email">Correo electrónico *</label>
+                  <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="field field--full">
+                  <label for="asunto">Asunto *</label>
+                  <input class="input" type="text" id="asunto" name="asunto" placeholder="Información sobre el curso Full-Stack" required>
+                </div>
+                <div class="field field--full">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu situación y qué te gustaría saber." required></textarea>
+                </div>
+                <div class="field field--full">
+                  <label class="checkbox">
+                    <input type="checkbox" name="privacidad" required>
+                    <span>He leído y acepto la <a href="politica-privacidad.html">política de privacidad</a>.</span>
+                  </label>
+                </div>
+              </div>
+
+              <p class="form-status" data-form-status role="status"></p>
+
+              <div class="form__actions">
+                <button class="btn btn--primary btn--lg" type="submit">
+                  Enviar mensaje
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+                <p class="form__footnote">Respondemos en menos de 24 h laborables.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="map" data-reveal>
+          <iframe
+            src="https://maps.google.com/maps?q=Calle%20Ejemplo%2042%2C%2028013%20Madrid%2C%20Espa%C3%B1a&amp;z=15&amp;output=embed"
+            title="Ubicación de Academia Conquer en el mapa"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map__footer">
+            <a class="btn btn--link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Ejemplo+42,+28013+Madrid,+Espa%C3%B1a" target="_blank" rel="noopener noreferrer">
+              Abrir en Google Maps
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

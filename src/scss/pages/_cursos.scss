@@ -1,0 +1,60 @@
+@use "../abstracts" as *;
+
+.course-grid {
+  display: grid;
+  gap: clamp(1.2rem, 2.5vw, 1.75rem);
+
+  @include mq(sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.course-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  .chip {
+    transition:
+      border-color $t-fast,
+      background-color $t-fast,
+      color $t-fast;
+
+    &:hover,
+    &.is-active {
+      border-color: rgba(157, 239, 197, 0.4);
+      background: rgba(95, 227, 166, 0.12);
+      color: $color-green;
+    }
+  }
+}
+
+.courses-note {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: 1px dashed $color-border-strong;
+  border-radius: $radius-lg;
+  background: rgba(11, 18, 32, 0.5);
+
+  @include mq(md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    color: $color-muted;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #ffffff;
+    font-family: $font-heading;
+  }
+}

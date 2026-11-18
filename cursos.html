@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cursos de Academia Conquer: desarrollo full-stack, inteligencia artificial, blockchain y ciberseguridad. Formación online con mentores en activo.">
+  <meta name="theme-color" content="#04070e">
+  <title>Cursos — Academia Conquer</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="cursos-title">
+      <div class="container page-hero__inner">
+        <nav aria-label="Migas de pan" data-reveal>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li aria-current="page">Cursos</li>
+          </ol>
+        </nav>
+        <p class="eyebrow" data-reveal style="--delay: 60ms"><span class="eyebrow__dot"></span> Formación</p>
+        <h1 id="cursos-title" data-reveal style="--delay: 100ms">Cursos para construir tu carrera tech</h1>
+        <p class="page-hero__lede" data-reveal style="--delay: 140ms">
+          Programas online, prácticos y actualizados. Elige tu ruta, marca tu ritmo y aprende con mentores que trabajan en la industria.
+        </p>
+        <div class="page-hero__actions" data-reveal style="--delay: 180ms">
+          <a class="btn btn--primary" href="registro.html">Crear cuenta gratis</a>
+          <a class="btn btn--ghost" href="contacto.html">Pedir orientación</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--top-flush" aria-labelledby="catalogo-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Catálogo</p>
+          <h2 id="catalogo-title">Elige tu ruta de aprendizaje</h2>
+          <p class="section-head__lede">Cuatro especialidades con una base común: código limpio, proyectos reales y empleabilidad.</p>
+        </div>
+
+        <div class="course-grid">
+          <article class="card course-card" data-reveal>
+            <div class="course-card__media">
+              <span class="badge badge--green course-card__badge">Más popular</span>
+              <img src="/src/assets/img/fullstack-course.png" alt="Desarrollo Full-Stack: HTML, Node, React y JavaScript" width="400" height="240" loading="lazy" decoding="async">
+            </div>
+            <div class="course-card__body">
+              <p class="tag">Desarrollo web</p>
+              <h3>Desarrollo Full-Stack</h3>
+              <p>Aprende a construir aplicaciones web completas, desde la interfaz hasta la base de datos y el despliegue.</p>
+              <div class="course-card__meta">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 24 semanas</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Intermedio</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online</span>
+              </div>
+              <a class="course-card__link" href="curso1.html">Ver programa <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-reveal style="--delay: 80ms">
+            <div class="course-card__media">
+              <span class="badge course-card__badge">Nuevo</span>
+              <img src="/src/assets/img/ai-course.jpg" alt="Inteligencia artificial representada sobre una mano" width="1400" height="788" loading="lazy" decoding="async">
+            </div>
+            <div class="course-card__body">
+              <p class="tag">Inteligencia artificial</p>
+              <h3>Desarrollo e Inteligencia Artificial</h3>
+              <p>Diseña y despliega modelos de machine learning, redes neuronales y procesamiento de lenguaje natural.</p>
+              <div class="course-card__meta">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 20 semanas</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Intermedio</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online</span>
+              </div>
+              <a class="course-card__link" href="curso2.html">Ver programa <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-reveal>
+            <div class="course-card__media">
+              <span class="badge course-card__badge">Avanzado</span>
+              <img src="/src/assets/img/img-cursos.jpg" alt="Teclado y pantalla con código, imagen del catálogo de cursos" width="1000" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="course-card__body">
+              <p class="tag">Blockchain</p>
+              <h3>Desarrollo Blockchain</h3>
+              <p>Contratos inteligentes, redes descentralizadas y aplicaciones Web3 explicadas desde los fundamentos.</p>
+              <div class="course-card__meta">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 16 semanas</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Avanzado</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online</span>
+              </div>
+              <a class="course-card__link" href="https://www.conquerblocks.com/master-blockchain" target="_blank" rel="noopener noreferrer">
+                Ver en ConquerBlocks
+                <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-reveal style="--delay: 80ms">
+            <div class="course-card__media">
+              <span class="badge course-card__badge">Avanzado</span>
+              <img src="/src/assets/img/setup.jpg" alt="Puesto de trabajo con equipos y accesorios tecnológicos" width="1920" height="1200" loading="lazy" decoding="async">
+            </div>
+            <div class="course-card__body">
+              <p class="tag">Seguridad</p>
+              <h3>Ciberseguridad</h3>
+              <p>Analiza amenazas, protege infraestructuras y aprende las técnicas de defensa que demanda el sector.</p>
+              <div class="course-card__meta">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 18 semanas</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Avanzado</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online</span>
+              </div>
+              <a class="course-card__link" href="https://www.conquerblocks.com/master-ciberseguridad" target="_blank" rel="noopener noreferrer">
+                Ver en ConquerBlocks
+                <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="courses-note" data-reveal>
+          <div>
+            <strong>¿No sabes qué curso elegir?</strong>
+            <p>Cuéntanos tu punto de partida y tu objetivo. Te recomendamos la ruta que mejor encaja contigo, sin compromiso.</p>
+          </div>
+          <a class="btn btn--primary" href="contacto.html">Pedir orientación <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ventajas-title">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Incluido en todos los cursos</p>
+          <h2 id="ventajas-title">Mucho más que clases</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="feature-card" data-reveal>
+            <div class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
+            <h3>Proyectos de portafolio</h3>
+            <p>Cada módulo termina en una entrega real que puedes mostrar en tu GitHub y en entrevistas.</p>
+          </article>
+          <article class="feature-card feature-card--blue" data-reveal style="--delay: 90ms">
+            <div class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></div>
+            <h3>Comunidad y soporte</h3>
+            <p>Canales de dudas, sesiones de preguntas y revisión de código con mentores y compañeros.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--delay: 180ms">
+            <div class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-graduation"/></svg></div>
+            <h3>Certificado y carrera</h3>
+            <p>Certificación al finalizar, preparación de CV y simulacros de entrevistas técnicas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

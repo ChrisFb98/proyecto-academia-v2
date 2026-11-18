@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de Academia Conquer: guías de programación, tendencias de desarrollo web, inteligencia artificial y recursos para aprender a programar.">
+  <meta name="theme-color" content="#04070e">
+  <title>Blog — Academia Conquer</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="blog-title">
+      <div class="container page-hero__inner">
+        <nav aria-label="Migas de pan" data-reveal>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li aria-current="page">Blog</li>
+          </ol>
+        </nav>
+        <p class="eyebrow" data-reveal style="--delay: 60ms"><span class="eyebrow__dot"></span> Conocimiento abierto</p>
+        <h1 id="blog-title" data-reveal style="--delay: 100ms">Blog de Academia Conquer</h1>
+        <p class="page-hero__lede" data-reveal style="--delay: 140ms">
+          Noticias, artículos y recursos sobre programación, desarrollo de software, inteligencia artificial y tecnología. Aprende incluso cuando no estás en clase.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--top-flush">
+      <div class="container">
+        <article class="featured-post" data-reveal data-category="guia">
+          <div class="featured-post__media">
+            <span class="badge badge--green">Destacado</span>
+            <img src="/src/assets/img/como-empezar-programacion.jpg" alt="Ilustración de programación orientada a objetos con una persona frente a un servidor" width="1920" height="1080" loading="lazy" decoding="async">
+          </div>
+          <div class="featured-post__body">
+            <div class="post-card__meta"><span>Guía</span><span>12 de mayo de 2025</span><span>6 min</span></div>
+            <h2>Cómo empezar en el mundo de la programación</h2>
+            <p>Elegir un lenguaje, entrenar el pensamiento lógico y evitar los errores más comunes del primer mes. Una hoja de ruta honesta para tus primeros pasos.</p>
+            <a class="btn btn--soft" href="noticia1.html">
+              Leer artículo
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <div class="category-bar" role="group" aria-label="Filtrar artículos por tema" data-filter-bar data-reveal>
+          <button class="chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-filter="guia" aria-pressed="false">Guías</button>
+          <button class="chip" type="button" data-filter="tendencias" aria-pressed="false">Tendencias</button>
+          <button class="chip" type="button" data-filter="ia" aria-pressed="false">Inteligencia artificial</button>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card post-card" data-reveal data-category="tendencias">
+            <div class="post-card__media">
+              <img src="/src/assets/img/tendencias-desarrollo-web-2025.webp" alt="Panel con código y el año 2025 sobre fondo oscuro" width="1600" height="1000" loading="lazy" decoding="async">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>Tendencias</span><span>20 de mayo de 2025</span><span>5 min</span></div>
+              <h3>Tendencias en desarrollo web para 2025</h3>
+              <p>IA, no-code, WebAssembly, diseño inclusivo y seguridad avanzada: las claves que están redefiniendo la web.</p>
+              <a class="post-card__link" href="noticia2.html">Leer artículo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card post-card" data-reveal data-category="ia" style="--delay: 90ms">
+            <div class="post-card__media">
+              <img src="/src/assets/img/ai-course.jpg" alt="Representación de inteligencia artificial sobre una mano" width="1400" height="788" loading="lazy" decoding="async">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>Inteligencia artificial</span><span>Recurso externo</span></div>
+              <h3>Introducción a la inteligencia artificial</h3>
+              <p>Qué es la IA, cómo se entrena un modelo y por qué está transformando todas las industrias. Guía del equipo de ConquerBlocks.</p>
+              <a class="post-card__link" href="https://www.conquerblocks.com/master-inteligencia-artificial" target="_blank" rel="noopener noreferrer">
+                Leer en ConquerBlocks <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <span class="cta__glow" aria-hidden="true"></span>
+          <p class="eyebrow">Newsletter</p>
+          <h2>Una idea de código cada semana</h2>
+          <p>Recursos, tendencias y ejercicios prácticos directamente en tu correo. Sin spam, solo conocimiento útil.</p>
+          <form class="form newsletter-form" action="#" method="post" data-demo-form data-success="¡Suscripción confirmada! Revisa tu correo para completar el alta.">
+            <div class="field">
+              <label class="visually-hidden" for="newsletter-email">Correo electrónico</label>
+              <input class="input" type="email" id="newsletter-email" name="email" placeholder="tu@email.com" autocomplete="email" required>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Suscribirme</button>
+            <p class="form-status" data-form-status role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

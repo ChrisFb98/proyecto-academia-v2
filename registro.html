@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crea tu cuenta en Academia Conquer y accede a cursos de desarrollo, inteligencia artificial y ciberseguridad.">
+  <meta name="theme-color" content="#04070e">
+  <title>Registro — Academia Conquer</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <section class="auth" aria-labelledby="registro-title">
+      <div class="container auth__inner">
+        <div class="auth__intro" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Únete a la academia</p>
+          <h1 id="registro-title">Crea tu cuenta y empieza hoy</h1>
+          <p>Regístrate para reservar tu plaza, acceder a los materiales y entrar en la comunidad de estudiantes y mentores.</p>
+          <ul class="auth-benefits">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Acceso a la plataforma y a los recursos descargables.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Retos semanales con revisión de código.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sesiones en directo y grabaciones.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Certificado al completar tu programa.</li>
+          </ul>
+          <div class="auth-separator">¿Ya tienes cuenta?</div>
+          <a class="btn btn--ghost" href="login.html">
+            Iniciar sesión
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="auth__card" data-reveal style="--delay: 100ms">
+          <div class="auth__card-head">
+            <h2>Registro de usuario</h2>
+            <p>Completa el formulario. Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+          </div>
+
+          <form class="form" action="#" method="post" data-demo-form data-success="¡Cuenta creada! Te hemos enviado un correo para verificar tu dirección.">
+            <div class="form__grid">
+              <div class="field">
+                <label for="username">Nombre de usuario *</label>
+                <input class="input" type="text" id="username" name="username" autocomplete="username" placeholder="tu_usuario" required>
+              </div>
+              <div class="field">
+                <label for="fecha-nacimiento">Fecha de nacimiento *</label>
+                <input class="input" type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+              </div>
+              <div class="field field--full">
+                <label for="email">Correo electrónico *</label>
+                <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="tu@email.com" required>
+              </div>
+              <div class="field field--full">
+                <label for="password-registro">Contraseña *</label>
+                <div class="password-field">
+                  <input class="input" type="password" id="password-registro" name="password" autocomplete="new-password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                  <button class="password-toggle" type="button" data-password-toggle="password-registro" aria-label="Mostrar contraseña" aria-pressed="false">
+                    <svg class="icon icon--eye" aria-hidden="true"><use href="#i-eye"/></svg>
+                    <svg class="icon icon--eye-off is-hidden" aria-hidden="true"><use href="#i-eye-off"/></svg>
+                  </button>
+                </div>
+                <span class="hint">Usa al menos 8 caracteres, con letras y números.</span>
+              </div>
+              <div class="field field--full">
+                <label for="direccion">Dirección *</label>
+                <input class="input" type="text" id="direccion" name="direccion" autocomplete="street-address" placeholder="Calle, número, ciudad" required>
+              </div>
+              <div class="field">
+                <label for="pagina-web">Página web</label>
+                <input class="input" type="url" id="pagina-web" name="pagina-web" placeholder="https://tu-sitio.com" autocomplete="url">
+              </div>
+              <div class="field field--file">
+                <label for="photo">Foto de perfil</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <span class="hint">JPG, PNG o WebP. Máximo 2 MB.</span>
+              </div>
+              <div class="field field--full">
+                <label for="biografia">Biografía *</label>
+                <textarea id="biografia" name="biografia" rows="4" placeholder="Cuéntanos qué te interesa aprender y cuál es tu objetivo." required></textarea>
+              </div>
+              <div class="field field--full">
+                <label class="checkbox">
+                  <input type="checkbox" name="terminos" required>
+                  <span>Acepto los <a href="aviso-legal.html">términos y condiciones</a> y la <a href="politica-privacidad.html">política de privacidad</a>.</span>
+                </label>
+              </div>
+            </div>
+
+            <p class="form-status" data-form-status role="status"></p>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg" type="submit">
+                Crear cuenta
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </button>
+              <p class="form__footnote">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

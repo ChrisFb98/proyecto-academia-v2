@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia sesión en tu cuenta de Academia Conquer y continúa tu formación en desarrollo, IA y ciberseguridad.">
+  <meta name="theme-color" content="#04070e">
+  <title>Iniciar sesión — Academia Conquer</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <section class="auth" aria-labelledby="login-title">
+      <div class="container auth__inner">
+        <div class="auth__intro" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Bienvenido de nuevo</p>
+          <h1 id="login-title">Continúa donde lo dejaste</h1>
+          <p>Accede a tus cursos, tus retos y las sesiones en directo. Tu progreso te está esperando.</p>
+          <ul class="auth-benefits">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Retoma las clases y grabaciones pendientes.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> Entrega tus retos y recibe feedback.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Consulta el calendario de sesiones en directo.</li>
+          </ul>
+        </div>
+
+        <div class="auth__card" data-reveal style="--delay: 100ms">
+          <div class="auth__card-head">
+            <h2>Iniciar sesión</h2>
+            <p>Introduce tus credenciales para acceder a tu cuenta.</p>
+          </div>
+
+          <form class="form" action="#" method="post" data-demo-form data-success="Sesión iniciada correctamente. En esta demo no hay backend, ¡pero todo funciona!">
+            <div class="field">
+              <label for="login-user">Usuario o correo electrónico</label>
+              <input class="input" type="text" id="login-user" name="usuario" autocomplete="username" placeholder="tu@email.com" required>
+            </div>
+            <div class="field">
+              <label for="login-password">Contraseña</label>
+              <div class="password-field">
+                <input class="input" type="password" id="login-password" name="password" autocomplete="current-password" placeholder="Tu contraseña" required>
+                <button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Mostrar contraseña" aria-pressed="false">
+                  <svg class="icon icon--eye" aria-hidden="true"><use href="#i-eye"/></svg>
+                  <svg class="icon icon--eye-off is-hidden" aria-hidden="true"><use href="#i-eye-off"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" name="recordarme">
+                <span>Recordarme</span>
+              </label>
+              <a href="contacto.html">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <p class="form-status" data-form-status role="status"></p>
+
+            <button class="btn btn--primary btn--block btn--lg" type="submit">
+              Entrar
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </button>
+
+            <p class="form__footnote form__footnote--center">¿Aún no tienes cuenta? <a href="registro.html">Regístrate gratis</a></p>
+          </form>
+
+          <div class="auth__switch">
+            Al continuar aceptas nuestros <a href="aviso-legal.html">términos</a> y la <a href="politica-privacidad.html">política de privacidad</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

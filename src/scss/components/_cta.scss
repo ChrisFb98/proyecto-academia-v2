@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+
+.cta {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgba(157, 239, 197, 0.24);
+  border-radius: $radius-lg;
+  background:
+    radial-gradient(900px 300px at 18% 0%, rgba(95, 227, 166, 0.14), transparent 62%),
+    radial-gradient(760px 320px at 92% 100%, rgba(113, 140, 255, 0.18), transparent 62%),
+    rgba(9, 15, 27, 0.82);
+  text-align: center;
+  box-shadow: $shadow-lg;
+
+  .eyebrow {
+    justify-content: center;
+  }
+
+  h2 {
+    max-width: 24ch;
+    margin: 0.9rem auto 0;
+  }
+
+  p {
+    max-width: 56ch;
+    margin: 1rem auto 0;
+    color: $color-muted;
+  }
+}
+
+.cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.9rem;
+}
+
+.cta__glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  width: 680px;
+  height: 340px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(124, 231, 244, 0.14), transparent 70%);
+  pointer-events: none;
+}

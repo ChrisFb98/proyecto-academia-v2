@@ -1,0 +1,77 @@
+@use "sass:map";
+@use "variables" as *;
+
+$breakpoints: (
+  sm: 40em,
+  md: 56.25em,
+  lg: 75em,
+);
+
+/// Media query mobile-first
+@mixin mq($size) {
+  @if map.has-key($breakpoints, $size) {
+    @media (min-width: map.get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+/// Media query descendente (para casos concretos)
+@mixin mq-down($size) {
+  @media (max-width: (#{map.get($breakpoints, $size) - 0.02em})) {
+    @content;
+  }
+}
+
+@mixin focus-ring($color: $color-green) {
+  outline: 2px solid $color;
+  outline-offset: 3px;
+}
+
+@mixin gradient-text {
+  background: $gradient-brand;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin glass($bg: rgba(11, 18, 32, 0.72), $blur: 14px) {
+  background: $bg;
+  -webkit-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+}
+
+@mixin surface($bg: linear-gradient(180deg, rgba(20, 35, 59, 0.55), rgba(11, 18, 32, 0.72))) {
+  background: $bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+}
+
+@mixin lift {
+  transition:
+    transform $t-base,
+    border-color $t-base,
+    box-shadow $t-base,
+    background-color $t-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(157, 239, 197, 0.35);
+    box-shadow: $shadow-lg, 0 0 46px -20px rgba(95, 227, 166, 0.4);
+  }
+}
+
+@mixin line-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin section-padding {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}

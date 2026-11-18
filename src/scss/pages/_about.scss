@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+
+.values {
+  display: grid;
+  gap: 1.2rem;
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.value-card {
+  padding: 1.5rem;
+  border-top: 1px solid $color-border;
+  transition: border-color $t-base;
+
+  &:hover {
+    border-top-color: rgba(157, 239, 197, 0.6);
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $color-muted;
+    font-size: 0.92rem;
+  }
+}
+
+.value-card__index {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: $color-green;
+}
+
+.team {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.25rem);
+
+  @include mq(sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,39 @@
+// ============================================================
+// Academia Conquer — hoja principal
+// ============================================================
+
+@use "abstracts" as *;
+
+// Base
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
+
+// Layout
+@use "layout/container";
+@use "layout/section";
+
+// Componentes
+@use "components/icons";
+@use "components/buttons";
+@use "components/badges";
+@use "components/header";
+@use "components/footer";
+@use "components/hero";
+@use "components/cards";
+@use "components/stats";
+@use "components/forms";
+@use "components/prose";
+@use "components/cta";
+@use "components/utilities";
+
+// Páginas
+@use "pages/home";
+@use "pages/about";
+@use "pages/cursos";
+@use "pages/curso";
+@use "pages/blog";
+@use "pages/article";
+@use "pages/auth";
+@use "pages/contact";
+@use "pages/legal";

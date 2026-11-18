@@ -1,0 +1,103 @@
+@use "../abstracts" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: $radius-pill;
+  font-family: $font-heading;
+  font-size: $fs-sm;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-align: center;
+  white-space: nowrap;
+  transition:
+    transform $t-fast,
+    box-shadow $t-base,
+    background-color $t-base,
+    border-color $t-base,
+    color $t-base;
+
+  .icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    transition: transform $t-base;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn--primary {
+  background: $gradient-brand;
+  color: #04120c;
+  box-shadow: 0 12px 30px -14px rgba(95, 227, 166, 0.65);
+
+  &:hover {
+    box-shadow: 0 18px 44px -14px rgba(95, 227, 166, 0.8);
+  }
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: $color-border-strong;
+  color: $color-text;
+
+  &:hover {
+    background: rgba(157, 239, 197, 0.08);
+    border-color: rgba(157, 239, 197, 0.55);
+    color: #ffffff;
+  }
+}
+
+.btn--soft {
+  background: rgba(113, 140, 255, 0.12);
+  border-color: rgba(113, 140, 255, 0.32);
+  color: $color-text;
+
+  &:hover {
+    background: rgba(113, 140, 255, 0.2);
+    border-color: rgba(113, 140, 255, 0.5);
+  }
+}
+
+.btn--sm {
+  padding: 0.62rem 1.05rem;
+  font-size: 0.8rem;
+}
+
+.btn--lg {
+  padding: 1rem 1.7rem;
+  font-size: 1rem;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--link {
+  gap: 0.4rem;
+  padding: 0.25rem 0;
+  border-radius: 0;
+  background: none;
+  color: $color-green;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: $color-cyan;
+    transform: none;
+
+    .icon {
+      transform: translateX(3px);
+    }
+  }
+}

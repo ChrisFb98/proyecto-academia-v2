@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curso de Desarrollo Full-Stack de Academia Conquer: HTML, CSS, JavaScript, React, Node.js, bases de datos y despliegue en 24 semanas.">
+  <meta name="theme-color" content="#04070e">
+  <title>Curso de Desarrollo Full-Stack — Academia Conquer</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="curso-title">
+      <div class="container page-hero__inner">
+        <nav aria-label="Migas de pan" data-reveal>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li aria-current="page">Desarrollo Full-Stack</li>
+          </ol>
+        </nav>
+        <p class="eyebrow" data-reveal style="--delay: 60ms"><span class="eyebrow__dot"></span> Desarrollo web</p>
+        <h1 id="curso-title" data-reveal style="--delay: 100ms">Curso de Desarrollo Full-Stack</h1>
+        <p class="page-hero__lede" data-reveal style="--delay: 140ms">
+          Aprende a desarrollar aplicaciones web completas, desde el frontend hasta el backend, y termina con un producto real desplegado en producción.
+        </p>
+        <div class="course-meta" data-reveal style="--delay: 180ms">
+          <span class="chip chip--green"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 24 semanas</span>
+          <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Nivel intermedio</span>
+          <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online en directo</span>
+          <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Próxima edición: enero</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--top-flush">
+      <div class="container">
+        <div class="course-hero">
+          <div data-reveal>
+            <h2>Domina el stack completo</h2>
+            <p>Este curso está diseñado para quienes quieren construir productos web de principio a fin. Trabajarás con las tecnologías más demandadas y aprenderás a pensar como un ingeniero de producto: requisitos, arquitectura, implementación, pruebas y despliegue.</p>
+            <p>No necesitas experiencia previa en programación, pero sí constancia: dedicamos entre 8 y 10 horas semanales a clases, retos y proyecto.</p>
+            <ul class="check-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Frontend moderno con HTML, CSS, JavaScript y React.</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Backend con Node.js, Express y APIs REST.</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Bases de datos SQL y NoSQL.</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Despliegue, mantenimiento y buenas prácticas.</li>
+            </ul>
+          </div>
+          <div class="course-hero__media" data-reveal style="--delay: 120ms">
+            <img src="/src/assets/img/fullstack-course.png" alt="Logotipos de HTML, Node, React y JavaScript sobre una pantalla" width="400" height="240" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container course-layout">
+        <div class="course-content" data-reveal>
+          <h2 id="contenido-curso">Contenido del curso</h2>
+          <p>Seis módulos progresivos, cada uno con clases en directo, retos semanales y una entrega evaluada.</p>
+
+          <ol class="module-list">
+            <li class="module"><span>Introducción al desarrollo web: cómo funciona la web, herramientas y primer proyecto.</span></li>
+            <li class="module"><span>HTML semántico y CSS moderno: maquetación responsive, flexbox, grid y accesibilidad.</span></li>
+            <li class="module"><span>JavaScript esencial: lógica, DOM, asincronía y consumo de APIs.</span></li>
+            <li class="module"><span>Frameworks de frontend: componentes, estado y rutas con React.</span></li>
+            <li class="module"><span>Backend con Node.js y Express: autenticación, APIs y bases de datos.</span></li>
+            <li class="module"><span>Despliegue y mantenimiento: CI/CD, monitorización y optimización.</span></li>
+          </ol>
+
+          <h3>Al finalizar el curso</h3>
+          <p>Habrás construido una aplicación full-stack completa con autenticación, base de datos y despliegue. Tendrás las habilidades necesarias para optar a puestos de desarrollador junior y un portafolio con el que demostrarlo.</p>
+
+          <div class="course-highlight">
+            <svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>
+            <p><strong>Proyecto final</strong> Diseña, desarrolla y presenta una aplicación real ante tus mentores y compañeros. Recibirás feedback técnico y de producto.</p>
+          </div>
+        </div>
+
+        <aside class="course-aside" aria-labelledby="detalles-title" data-reveal style="--delay: 100ms">
+          <div class="course-aside__card">
+            <h2 id="detalles-title">Detalles del curso</h2>
+            <dl class="course-details">
+              <div><dt>Duración</dt><dd>24 semanas</dd></div>
+              <div><dt>Nivel</dt><dd>Intermedio</dd></div>
+              <div><dt>Modalidad</dt><dd>Online en directo</dd></div>
+              <div><dt>Dedicación</dt><dd>8–10 h / semana</dd></div>
+              <div><dt>Certificado</dt><dd>Incluido</dd></div>
+              <div><dt>Idioma</dt><dd>Español</dd></div>
+            </dl>
+            <a class="btn btn--primary btn--block" href="contacto.html">Solicitar información</a>
+            <p class="course-aside__note">Plazas limitadas por edición. Te responderemos en menos de 24 h.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <span class="cta__glow" aria-hidden="true"></span>
+          <p class="eyebrow">Siguiente paso</p>
+          <h2>Empieza tu carrera full-stack</h2>
+          <p>Reserva tu plaza o resuelve tus dudas con nuestro equipo de admisiones.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="registro.html">Inscribirme</a>
+            <a class="btn btn--ghost btn--lg" href="cursos.html">Ver otros cursos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

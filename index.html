@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academia Conquer: formación online en desarrollo full-stack, inteligencia artificial y ciberseguridad. Aprende con mentores en activo y proyectos reales.">
+  <meta name="theme-color" content="#04070e">
+  <title>Academia Conquer — Aprende desarrollo, IA y ciberseguridad</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- @include icons.html -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- @include header.html -->
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span> Academia online de tecnología</p>
+          <h1 class="hero__title" id="hero-title" data-reveal style="--delay: 60ms">
+            Aprende a construir <span class="text-gradient">el futuro</span> con código e IA
+          </h1>
+          <p class="hero__lede" data-reveal style="--delay: 120ms">
+            Formación intensiva en desarrollo full-stack, inteligencia artificial y ciberseguridad, guiada por profesionales en activo. Diseñada para llevarte de cero a empleable.
+          </p>
+          <div class="hero__actions" data-reveal style="--delay: 180ms">
+            <a class="btn btn--primary btn--lg" href="cursos.html">
+              Explorar cursos
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="quienes-somos.html">Conócenos</a>
+          </div>
+          <dl class="hero__stats" data-reveal style="--delay: 240ms">
+            <div>
+              <dt>Alumnos formados</dt>
+              <dd>+2.500</dd>
+            </div>
+            <div>
+              <dt>Valoración media</dt>
+              <dd>4,9/5</dd>
+            </div>
+            <div>
+              <dt>Salida laboral</dt>
+              <dd>92%</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual" data-reveal style="--delay: 160ms">
+          <div class="hero__frame">
+            <img src="/src/assets/img/ai-course.jpg" alt="Persona sosteniendo una representación holográfica de inteligencia artificial" width="1400" height="788" decoding="async">
+            <span class="hero__scan" aria-hidden="true"></span>
+          </div>
+          <div class="float-card float-card--ai">
+            <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+            <span><strong>IA aplicada</strong>Modelos reales</span>
+          </div>
+          <div class="float-card float-card--code">
+            <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+            <span><strong>Full-Stack</strong>Proyectos en producción</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué Conquer -->
+    <section class="section" aria-labelledby="porque-title">
+      <div class="container">
+        <div class="home-intro">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Por qué Conquer</p>
+            <h2 id="porque-title">Una academia pensada para el mundo real</h2>
+          </div>
+          <p class="home-intro__note" data-reveal style="--delay: 100ms">
+            No vendemos humo: construimos portafolios, resolvemos retos de código y te acompañamos hasta la entrevista técnica.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="feature-card" data-reveal>
+            <div class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></div>
+            <h3>Mentores en activo</h3>
+            <p>Aprende con ingenieros que trabajan cada día en equipos de producto, IA y seguridad. Feedback directo sobre tu código.</p>
+          </article>
+          <article class="feature-card feature-card--blue" data-reveal style="--delay: 90ms">
+            <div class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></div>
+            <h3>Proyectos reales</h3>
+            <p>Desde la primera semana crearás aplicaciones que funcionan. Tu portafolio crecerá a la vez que tus conocimientos.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--delay: 180ms">
+            <div class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg></div>
+            <h3>Ruta personalizada</h3>
+            <p>Empieza donde estés. Diseñamos un itinerario según tu nivel y tu objetivo profesional, con seguimiento continuo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cursos destacados -->
+    <section class="section" aria-labelledby="cursos-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Formación</p>
+          <h2 id="cursos-title">Cursos destacados</h2>
+          <p class="section-head__lede">Programas intensivos, actualizados y orientados a las tecnologías que las empresas están contratando ahora mismo.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card course-card" data-reveal>
+            <div class="course-card__media">
+              <span class="badge badge--green course-card__badge">Más popular</span>
+              <img src="/src/assets/img/fullstack-course.png" alt="Curso de Desarrollo Full-Stack: HTML, Node, React y JavaScript" width="400" height="240" loading="lazy" decoding="async">
+            </div>
+            <div class="course-card__body">
+              <p class="tag">Desarrollo web</p>
+              <h3>Desarrollo Full-Stack</h3>
+              <p>Domina el frontend y el backend: HTML, CSS, JavaScript, React, Node.js y bases de datos. Termina con una app completa desplegada.</p>
+              <div class="course-card__meta">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 24 semanas</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Intermedio</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online</span>
+              </div>
+              <a class="course-card__link" href="curso1.html">Ver curso <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-reveal style="--delay: 100ms">
+            <div class="course-card__media">
+              <span class="badge course-card__badge">Nuevo</span>
+              <img src="/src/assets/img/ai-course.jpg" alt="Curso de Desarrollo e Inteligencia Artificial" width="1400" height="788" loading="lazy" decoding="async">
+            </div>
+            <div class="course-card__body">
+              <p class="tag">Inteligencia artificial</p>
+              <h3>Desarrollo e Inteligencia Artificial</h3>
+              <p>Construye sistemas que aprenden: machine learning, redes neuronales, NLP y despliegue de modelos en aplicaciones reales.</p>
+              <div class="course-card__meta">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 20 semanas</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg> Intermedio</span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Online</span>
+              </div>
+              <a class="course-card__link" href="curso2.html">Ver curso <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split: metodología -->
+    <section class="section" aria-labelledby="metodo-title">
+      <div class="container split">
+        <div data-reveal>
+          <p class="eyebrow">Metodología</p>
+          <h2 id="metodo-title">De la teoría al código que se despliega</h2>
+          <p class="text-muted">
+            Cada módulo combina una clase en directo, un reto práctico y una revisión de código. Nada de vídeos pasivos: escribes, rompes y arreglas.
+          </p>
+          <ul class="check-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Clases en directo y grabadas para que no pierdas nada.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Retos semanales evaluados por mentores.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Proyecto final con despliegue y presentación.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Preparación de entrevistas técnicas y CV.</li>
+          </ul>
+          <a class="btn btn--soft" href="quienes-somos.html">
+            Conoce el equipo
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+        <div class="split__media" data-reveal style="--delay: 120ms">
+          <img src="/src/assets/img/setup.jpg" alt="Escritorio de trabajo con monitor, teclado, tableta y accesorios" width="1920" height="1200" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Conocimiento abierto</p>
+          <h2 id="blog-title">Últimos del blog</h2>
+          <p class="section-head__lede">Guías, tendencias y recursos para seguir creciendo incluso fuera del aula.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card post-card" data-reveal>
+            <div class="post-card__media">
+              <img src="/src/assets/img/como-empezar-programacion.jpg" alt="Ilustración sobre programación orientada a objetos" width="1920" height="1080" loading="lazy" decoding="async">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>Guía</span><span>6 min de lectura</span></div>
+              <h3>Cómo empezar en el mundo de la programación</h3>
+              <p>Elegir lenguaje, entrenar el pensamiento lógico y evitar los errores más comunes del primer mes.</p>
+              <a class="post-card__link" href="noticia1.html">Leer artículo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card post-card" data-reveal style="--delay: 100ms">
+            <div class="post-card__media">
+              <img src="/src/assets/img/tendencias-desarrollo-web-2025.webp" alt="Panel con código y el año 2025 sobre un fondo oscuro" width="1600" height="1000" loading="lazy" decoding="async">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>Tendencias</span><span>5 min de lectura</span></div>
+              <h3>Tendencias en desarrollo web para 2025</h3>
+              <p>IA, no-code, WebAssembly y accesibilidad: las claves que están redefiniendo la forma de construir la web.</p>
+              <a class="post-card__link" href="noticia2.html">Leer artículo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--tight" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <span class="cta__glow" aria-hidden="true"></span>
+          <p class="eyebrow">Empieza hoy</p>
+          <h2 id="cta-title">Tu próximo salto profesional empieza con una línea de código</h2>
+          <p>Únete a la academia, elige tu ruta y accede a la comunidad, los retos y el acompañamiento de nuestros mentores.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="registro.html">Crear mi cuenta</a>
+            <a class="btn btn--ghost btn--lg" href="contacto.html">Hablar con el equipo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer.html -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

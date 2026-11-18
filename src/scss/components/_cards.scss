@@ -1,0 +1,351 @@
+@use "../abstracts" as *;
+
+// ---------- Tarjeta base ----------
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @include surface;
+  transition:
+    transform $t-base,
+    border-color $t-base,
+    box-shadow $t-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(157, 239, 197, 0.35);
+    box-shadow: $shadow-lg, 0 0 46px -22px rgba(95, 227, 166, 0.45);
+  }
+}
+
+// ---------- Tarjeta de característica ----------
+.feature-card {
+  position: relative;
+  padding: 1.75rem;
+  @include surface(linear-gradient(180deg, rgba(20, 35, 59, 0.45), rgba(11, 18, 32, 0.6)));
+  transition:
+    transform $t-base,
+    border-color $t-base,
+    box-shadow $t-base;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(420px 180px at 20% 0%, rgba(95, 227, 166, 0.09), transparent 70%);
+    opacity: 0;
+    transition: opacity $t-base;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(157, 239, 197, 0.32);
+    box-shadow: $shadow-lg;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    margin-bottom: 0.6rem;
+    font-size: $fs-lg;
+  }
+
+  p {
+    color: $color-muted;
+    font-size: 0.94rem;
+  }
+}
+
+.feature-card__icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.3rem;
+  border: 1px solid rgba(157, 239, 197, 0.22);
+  border-radius: $radius-md;
+  background: rgba(95, 227, 166, 0.1);
+  color: $color-green;
+
+  .icon {
+    width: 1.45rem;
+    height: 1.45rem;
+  }
+}
+
+.feature-card--blue .feature-card__icon {
+  border-color: rgba(113, 140, 255, 0.28);
+  background: rgba(113, 140, 255, 0.14);
+  color: #b9c5ff;
+}
+
+// ---------- Tarjeta de curso ----------
+.course-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: $color-surface-2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s $ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(4, 7, 14, 0.05) 40%, rgba(11, 18, 32, 0.8));
+    pointer-events: none;
+  }
+}
+
+.card:hover .course-card__media img {
+  transform: scale(1.045);
+}
+
+.course-card__badge {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  z-index: 1;
+}
+
+.course-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.4rem 1.5rem 1.6rem;
+
+  h3 {
+    font-size: $fs-lg;
+  }
+
+  p {
+    color: $color-muted;
+    font-size: 0.92rem;
+  }
+}
+
+.course-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.7rem;
+}
+
+.course-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  color: $color-green;
+  font-family: $font-heading;
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    transition: transform $t-base;
+  }
+
+  &:hover .icon {
+    transform: translateX(4px);
+  }
+}
+
+// ---------- Tarjeta de artículo ----------
+.post-card__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s $ease;
+  }
+}
+
+.card:hover .post-card__media img {
+  transform: scale(1.045);
+}
+
+.post-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1.35rem 1.45rem 1.5rem;
+
+  h3 {
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  p {
+    color: $color-muted;
+    font-size: 0.9rem;
+    @include line-clamp(3);
+  }
+}
+
+.post-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  color: $color-muted;
+  font-family: $font-mono;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  span + span::before {
+    content: "·";
+    margin-right: 0.5rem;
+    color: rgba(142, 161, 186, 0.6);
+  }
+}
+
+.post-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.8rem;
+  color: $color-green;
+  font-size: 0.84rem;
+  font-weight: 600;
+
+  .icon {
+    width: 0.95rem;
+    height: 0.95rem;
+    transition: transform $t-base;
+  }
+
+  &:hover .icon {
+    transform: translateX(4px);
+  }
+}
+
+// ---------- Equipo ----------
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.team-card__photo {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  background: $color-surface-2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.92);
+    transition:
+      transform 0.7s $ease,
+      filter $t-base;
+  }
+
+  &:hover img {
+    transform: scale(1.035);
+    filter: saturate(1.05);
+  }
+}
+
+.team-card__name {
+  font-family: $font-heading;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.team-card__role {
+  margin-top: 0.2rem;
+  color: $color-green;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.team-card__bio {
+  margin-top: 0.55rem;
+  color: $color-muted;
+  font-size: 0.9rem;
+}
+
+// ---------- Información de contacto ----------
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.3rem 1.4rem;
+  @include surface(linear-gradient(180deg, rgba(20, 35, 59, 0.4), rgba(11, 18, 32, 0.55)));
+  transition:
+    border-color $t-base,
+    transform $t-base;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: rgba(157, 239, 197, 0.3);
+  }
+
+  h3 {
+    font-size: 0.82rem;
+    font-family: $font-mono;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-muted;
+  }
+
+  p,
+  a {
+    margin-top: 0.35rem;
+    color: $color-text;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  a {
+    transition: color $t-fast;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}
+
+.info-card__icon {
+  display: grid;
+  place-items: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  flex: none;
+  border: 1px solid rgba(157, 239, 197, 0.2);
+  border-radius: $radius-sm;
+  background: rgba(95, 227, 166, 0.09);
+  color: $color-green;
+
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
